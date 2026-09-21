@@ -1,0 +1,18 @@
+{
+  "name": "screenplay-reader",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A private, browser-based Final Draft screenplay reader.",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "test": "node tests/run-node-tests.mjs && node tests/run-app-tests.mjs",
+    "test:browser": "node tests/run-browser-tests.cjs"
+  },
+  "devDependencies": {
+    "@xmldom/xmldom": "^0.9.12",
+    "fake-indexeddb": "^6.2.5",
+    "happy-dom": "^20.14.5",
+    "playwright": "^1.55.0"
+  }
+}
